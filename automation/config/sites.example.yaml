@@ -1,0 +1,24 @@
+sites:
+  - name: semplus_kisvan
+    login_url: "https://semplus.kisvan.co.kr/"
+    flow_type: query_then_download
+    supports_range: false
+    monday_daily_only: true
+    store_range_start: 1
+    store_range_end: 9
+    store_range_width: 2
+    username_value: "0050000001"
+    password_env: SEMPLUS_PASSWORD
+    retries: 2
+    query_type_value: "고객번호"
+    query_opens_popup: true
+    selectors:
+      username: "input[name='username'], #username, input[type='text']"
+      password: "input[type='password']"
+      submit: "button:has-text('확인'), button:has-text('로그인'), input[type='submit']"
+      date_from: "input[name='date_start'], #date_start, input[id*='start']"
+      date_to: "input[name='date_end'], #date_end, input[id*='end']"
+      store: "input[name='store'], #store, input[id*='store']"
+      query_type: "select[name*='조회구분'], select[id*='조회구분'], select"
+      query: "button:has-text('검색'), a:has-text('검색')"
+      download: "#btn_Excel"

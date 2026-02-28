@@ -1,0 +1,30 @@
+{
+  "sites": [
+    {
+      "name": "semplus_kisvan_test",
+      "login_url": "https://semplus.kisvan.co.kr/",
+      "flow_type": "query_then_download",
+      "supports_range": false,
+      "monday_daily_only": true,
+      "store_range_start": 1,
+      "store_range_end": 3,
+      "store_range_width": 2,
+      "username_value": "0050000001",
+      "password_env": "SEMPLUS_PASSWORD",
+      "retries": 1,
+      "query_type_value": "고객번호",
+      "query_opens_popup": true,
+      "selectors": {
+        "username": "#username",
+        "password": "#password",
+        "submit": "#login",
+        "date_from": "#date_start",
+        "date_to": "#date_end",
+        "store": "#store",
+        "query_type": "#queryType",
+        "query": "button:has-text('검색')",
+        "download": "#btn_Excel"
+      }
+    }
+  ]
+}
