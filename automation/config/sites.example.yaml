@@ -1,0 +1,18 @@
+sites:
+  - name: card_channel
+    flow_type: query_then_download
+    supports_range: false
+    monday_daily_only: true
+    stores: [store_001, store_002]
+
+  - name: mall_channel
+    flow_type: query_open_file_then_download
+    supports_range: true
+    monday_daily_only: false
+    stores: [store_001]
+
+  - name: delivery_channel
+    flow_type: direct_download
+    supports_range: true
+    monday_daily_only: false
+    stores: [store_001, store_003]
