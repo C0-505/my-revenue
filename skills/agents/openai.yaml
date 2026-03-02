@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cafeteria Reminder"
+  short_description: "Popup reminders for daily cafeteria menu by date"
+  default_prompt: "Set up Windows popup reminders at 11:15 and 17:20 using menu dates and dishes from local files, with optional Feishu webhook push."

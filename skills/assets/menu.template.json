@@ -1,0 +1,12 @@
+﻿{
+  "dates": {
+    "2026-03-02": {
+      "lunch": "西兰花虾仁、干煸南瓜",
+      "dinner": "油豆鸡蛋、蒜芽菜"
+    }
+  },
+  "feishu": {
+    "enabled": false,
+    "webhook_url": ""
+  }
+}

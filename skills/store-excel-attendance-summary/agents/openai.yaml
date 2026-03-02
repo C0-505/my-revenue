@@ -1,0 +1,7 @@
+interface:
+  display_name: "Store Attendance Summary"
+  short_description: "Summarize store business days and missing dates from Excel"
+  default_prompt: "Use $store-excel-attendance-summary to summarize store dates, compute difference vs 27 days, and output a new workbook."
+
+policy:
+  allow_implicit_invocation: true
